@@ -2,7 +2,7 @@
 chcp 65001 >nul
 setlocal enabledelayedexpansion
 set foundWLAN=false
-echo 本机WLAN IP地址
+echo 正在寻找本机WLAN IP地址。。。
 for /f "delims=" %%a in ('ipconfig') do (
     rem 检查是否为WLAN适配器
     echo %%a | findstr /C:"WLAN" >nul
