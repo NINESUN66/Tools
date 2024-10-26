@@ -17,6 +17,7 @@ for /f "delims=" %%a in ('ipconfig') do (
                 rem 去除前后空格
                 set "cleanIP=%%b"
                 set "cleanIP=!cleanIP: =!"
+                echo IP地址: !cleanIP!
                 rem 确保没有尾随的空格和回车
                 echo|set /p=!cleanIP!|clip
             )
